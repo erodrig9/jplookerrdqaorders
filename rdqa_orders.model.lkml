@@ -58,4 +58,10 @@ explore:order_header  {
     relationship: one_to_one
     sql_on: ${order_address.st_pr_id} = ${state_prov.st_pr_id} ;;
   }
+
+  join: members {
+    type:  inner
+    relationship: one_to_one
+    sql_on:  ${order_header.member_id} = ${members.member_id} ;;
+  }
 }
