@@ -81,8 +81,9 @@ view: vw_order_total {
     drill_fields: []
   }
 
-  measure: sum {
+  measure: order_total_sum {
     type:  sum
+    sql: ${order_total} ;;
     drill_fields: []
   }
 }
