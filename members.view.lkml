@@ -373,6 +373,11 @@ view: members {
     sql: ${TABLE}.uuid ;;
   }
 
+  dimension: full_name {
+    type:  string
+    sql:  ${name_first} + ${name_last} ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [member_id, username]
