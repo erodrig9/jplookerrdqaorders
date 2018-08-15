@@ -80,4 +80,9 @@ view: vw_order_total {
     type: count
     drill_fields: []
   }
+
+  measure: sum {
+    type:  sum
+    drill_fields: []
+  }
 }
