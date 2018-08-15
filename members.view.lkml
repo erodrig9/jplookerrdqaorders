@@ -375,7 +375,7 @@ view: members {
 
   dimension: full_name {
     type:  string
-    sql:  ${name_first} + ${name_last} ;;
+    sql:  ${name_first} + ' ' ${name_last} ;;
   }
 
   measure: count {
