@@ -1,5 +1,5 @@
 view: countries {
-  sql_table_name: dbo.Countries ;;
+  sql_table_name: edgeMaster.dbo.Countries ;;
 
   dimension: country_id {
     primary_key: yes
@@ -19,11 +19,13 @@ view: countries {
 
   dimension: country_name {
     type: string
+    map_layer_name: countries
     sql: ${TABLE}.CountryName ;;
   }
 
   dimension: iso3_country_code {
     type: string
+    map_layer_name: countries
     sql: ${TABLE}.ISO3CountryCode ;;
   }
 

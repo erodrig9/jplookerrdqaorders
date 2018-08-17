@@ -1,5 +1,5 @@
 view: state_prov {
-  sql_table_name: dbo.StateProv ;;
+  sql_table_name: edgeMaster.dbo.StateProv ;;
 
   dimension: center_zip {
     type: string

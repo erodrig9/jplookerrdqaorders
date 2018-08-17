@@ -1,5 +1,5 @@
 view: order_type {
-  sql_table_name: Lookup.OrderType ;;
+  sql_table_name: edgeMaster.Lookup.OrderType ;;
 
   dimension: order_type_id {
     primary_key: yes

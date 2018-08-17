@@ -83,6 +83,12 @@ view: vw_order_total {
 
   measure: order_total_sum {
     type:  sum
+    value_format_name: usd
     sql: ${order_total} ;;
+    drill_fields: [order_set*]
+  }
+
+  set: order_set {
+    fields: [order_header_id, order_line.catalog_item, order_line.quantity]
   }
 }
